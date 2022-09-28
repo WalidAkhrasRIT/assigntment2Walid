@@ -22,24 +22,26 @@ def pixel(color1):
         turtle.right(90)
     turtle.end_fill()
 
-def row(color2):
-    for z in range(ROWS):
+def row(color2,color3):
+    for z in range(int(ROWS/2)):
         pixel(color2)
         turtle.forward(30)
+        pixel(color3)
+        turtle.forward(30)
 
-def grid(color3):
+def grid(color4,color5):
     for w in range(int(COLUMNS/2)):
-        row(color3)
+        row(color4,color5)
         turtle.right(90)
         turtle.forward(PIXEL_SIZE*2)
         turtle.right(90)
-        row(color3)
+        row(color4,color5)
         turtle.left(180)
 
 def main():
     turtle.tracer(False)
     reposition(-300,300)
-    grid("White")
+    grid("Red","Black")
     turtle.tracer(True)
 main()
 
