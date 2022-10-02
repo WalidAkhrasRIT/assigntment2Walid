@@ -43,6 +43,6 @@ def main():
     reposition(-300,300)
     grid("Red","Black")
     turtle.tracer(True)
-main()
 
+main()
 turtle.exitonclick()
