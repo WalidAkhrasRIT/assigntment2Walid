@@ -5,8 +5,8 @@ turtle.fillcolor("White")
 PIXEL_SIZE = 30
 ROWS = 20
 COLUMNS = 20
-x=-300
-y=300
+x=-315
+y=315
 # Global Variables
 
 def pixelSizePicker(pixelSize):
@@ -40,13 +40,9 @@ def starterFunction():
     firstV=int(pixelSizePicker(input("Enter the size of the pixel you want (Min: 15, Max: 30): ")))
     secondV=int(numOfPixelsPerRowPicker(input("Enter the number of pixels you want per row (Min: 1, Max: 30): ")))
     thirdV=int(numOfPixelsPerColumnPicker(input("Enter the number of pixels you want per column (Min: 1, Max: 30): ")))
-    global x
-    global y
     global PIXEL_SIZE
     global ROWS
     global COLUMNS
-    x=-((firstV*secondV))/2
-    y=((firstV*secondV))/2
     PIXEL_SIZE = firstV
     ROWS = secondV
     COLUMNS = thirdV
@@ -133,6 +129,7 @@ def drawingMode():
 # Function which provides choice of using 'drawing modes' instead of the user having to look into the code
 
 def main():
+    turtle.screensize(400,400)
     turtle.tracer(False)
     reposition(x,y,0)
     drawingMode()
