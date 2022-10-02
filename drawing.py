@@ -5,8 +5,8 @@ turtle.fillcolor("White")
 PIXEL_SIZE = 30
 ROWS = 20
 COLUMNS = 20
-x=0
-y=0
+x=-300
+y=300
 # Global Variables
 
 def pixelSizePicker(pixelSize):
@@ -134,8 +134,8 @@ def drawingMode():
 
 def main():
     turtle.tracer(False)
-    drawingMode()
     reposition(x,y,0)
+    drawingMode()
     turtle.tracer(True)
     reposition(0,0,0)
     turtle.hideturtle()
