@@ -129,7 +129,6 @@ def drawingMode():
 # Function which provides choice of using 'drawing modes' instead of the user having to look into the code
 
 def main():
-    turtle.screensize(400,400)
     turtle.tracer(False)
     reposition(x,y,0)
     drawingMode()
