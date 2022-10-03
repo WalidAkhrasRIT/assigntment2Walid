@@ -51,8 +51,7 @@ def pixelColoring(pixelMultiColors):
         elif (inputColor=="A"):
                 singlePixel("darkgray")
         else:
-            print("This color is not supported, please close and try again :(")
-            ValueError
+            return False
 
 def drawColorLine():
     reposition(x,y,0)
